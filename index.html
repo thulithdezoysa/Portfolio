@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <!-- CDN -->
        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         
@@ -24,7 +24,7 @@
     <body>
         <header>
             <div class="logo">
-                <img src="./signature.png" class="logo--img" alt="">
+                <img src="./img/signature.png" class="logo--img" alt="">
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -32,8 +32,11 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <hr>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Skills</a></li>
+                    <hr>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <hr>
                     <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
                 </ul>
             </nav>
@@ -46,7 +49,7 @@
             </h1>
             <h3 class="section__title section__title2--intro">BSc Computer Science</h3>
             <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
-            <img src="img/Thulith.jfif" alt="a picture of Thulith" class="intro__img">
+            <img src="img/thulith1.jpg" alt="a picture of Thulith" class="intro__img">
         </section>
         
         
@@ -114,7 +117,9 @@
                
                 <div class="service">
                     <h3>Love to Build Stuff!</h3>
+                    
                     <p>I started playing with computers from a very small age with the passion for gaming. Since then I have been muckering around with all sorts of technologies that lead me to the passion of programming which encouraged me to make it my profession and I have been working towards my goal ever since which lead me to build all kinds of projects.</p>
+                    
                 </div> 
                 
                 
@@ -137,56 +142,109 @@
                    Computer Science from University of Westminster London, UK.</p>
            </div>
            
-           <img src="img/thulith2.jpg" alt="Jane leaning against a bus" class="about-me__img">
+           <img src="img/thulith2.jpg" alt="Thulith's portrait" class="about-me__img">
         </section>
         
+        
         <!-- My Work -->
-        <section class="my-work" id="work">
+        <div class="seperator" id="work"></div>
+        <section class="my-work" >
             <h2 class="section__title section__title--work">My projects</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/oldagram-square.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/tenzies.jpg" alt="" class="portfolio__img">
-                </a>
-    
-                
-                <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/password-generator.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-
-                <!-- Portfolio item 05 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/meme-generator.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/personal-dashboard.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/experiences.png" alt="" class="portfolio__img">
-                </a>
+            <div class="portfolio__item">
+                    <div class="portfolio-item-individual">
+                        <h6 class="section__subtitle" id="section__subtitle--portfolio-item">Kaumadhi </h6>
+                        <div class="live__show">
+                            <img src="img/oldagram-square.png" alt="" class="portfolio__img">
+                            
+                            <h6 class="portfolio__img--text"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade "></i>   View Live Website</h6>
+                        </div>
+                        <div>                                        
+                            <a  target="_blank" href="https://github.com/thulithdezoysa"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>       
+                            
+                        <p>This is the main layout of an Instagram clone. It is built using vanilla CSS, and is utilizing Flexbox, CSS Grid, and CSS Variables. It was built as a part of Scrimba's Frontend Developer Career Path.</p>
+                        <ul class="portfolio-item-individual__tool">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                        </ul>
+                        
+                    </div>
+        
+                </div>   
+                 <!-- Portfolio item 01 END -->
+                 
+                 
+                 
+                  <!-- Portfolio item 02 -->
+              <div class="portfolio__item">
+                    <div class="portfolio-item-individual">
+                        <h6 class="section__subtitle" id="section__subtitle--portfolio-item">Kaumadhi </h6>
+                        <div class="live__show">
+                            <img src="img/oldagram-square.png" alt="" class="portfolio__img">
+                            
+                            <h6 class="portfolio__img--text"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade "></i>   View Live Website</h6>
+                        </div>
+                        <div>                                        
+                            <a  target="_blank" href="#"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>       
+                            
+                        <p>This is the main layout of an Instagram clone. It is built using vanilla CSS, and is utilizing Flexbox, CSS Grid, and CSS Variables. It was built as a part of Scrimba's Frontend Developer Career Path.</p>
+                        <ul class="portfolio-item-individual__tool">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                        </ul>
+                        
+                    </div>
+        
+                </div>  
+                 <!-- Portfolio item 02 END -->
+                 
+                 
+                   <!-- Portfolio item 03 -->
+              <div class="portfolio__item">
+                    <div class="portfolio-item-individual">
+                        <h6 class="section__subtitle" id="section__subtitle--portfolio-item">Kaumadhi </h6>
+                        <div class="live__show">
+                            <img src="img/oldagram-square.png" alt="" class="portfolio__img">
+                            
+                            <h6 class="portfolio__img--text"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade "></i>   View Live Website</h6>
+                        </div>
+                        <div>                                        
+                            <a  target="_blank" href="#"><i class="fab fa-github"></i> GitHub Repo</a>
+                            <a  target="_blank" href="#"><i class="fab fa-behance"></i> Design</a>
+                        </div>       
+                            
+                        <p>This is the main layout of an Instagram clone. It is built using vanilla CSS, and is utilizing Flexbox, CSS Grid, and CSS Variables. It was built as a part of Scrimba's Frontend Developer Career Path.</p>
+                        <ul class="portfolio-item-individual__tool">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                        </ul>
+                        
+                    </div>
+        
+                </div>  
+                 <!-- Portfolio item 03 END -->
                 
 
             </div>
+         
+
         </section>
         
         
         <!-- Footer -->
         <footer class="footer">
-            <!-- replace with your own email address -->
+
             <a href="mailto:thulithdezoysa@gmail.com" class="footer__link">thulithdezoysa@gmail.com</a>
             <ul class="social-list">
             
@@ -201,12 +259,16 @@
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com" target="_blank">
+                    <a class="social-list__link" href="https://github.com/thulithdezoysa" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
             </ul>
         </footer>
+        
+          <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./img/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+        </a>
         
         
         <script src="js/index.js"></script>
