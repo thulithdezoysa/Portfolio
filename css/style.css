@@ -390,6 +390,7 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     border-radius: var(--br);
+ 
 
 }
 
@@ -414,10 +415,15 @@ header {
     
     .intro__img {
         border-radius: 50%;
+       
         grid-area: img;
+        max-height: 250px;
         min-width: 250px;
+        object-position: 50% 20%;
+
         position: relative;
         z-index: 2;
+        object-fit: cover;
     }    
     
     .section__subtitle--intro {
