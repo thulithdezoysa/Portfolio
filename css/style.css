@@ -49,7 +49,7 @@ html {
 }
 
 
-body {
+body { 
     background: var(--color-light);
     color: var(--color-dark);
     margin: 0;
@@ -81,7 +81,7 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: 1em 2.5em;
-    background: var(--color-dark);
+    background-color: transparent;
     color: var(--color-light);
     text-decoration: none;
     cursor: pointer;
@@ -89,16 +89,38 @@ strong { font-weight: var(--fw-bold) }
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
-    box-shadow: var(--bs);
+    transition: 
+        background-color .5s,
+        transform 200ms ease-in-out,
+        border .2s ease-out;
     transition: transform 750ms;
-    border: 2px solid var(--color-accent);
+    border: 2px solid var(--color-accent2);
     border-radius: .3em;
-
-}
+    -webkit-transition: 
+        background-color .5s,
+        transform 200ms ease-in-out,
+        transform 750ms,
+        border .2s ease-out;  
+    -o-transition: 
+        background-color .5s,
+        transform 200ms ease-in-out,
+        transform 750ms,
+        border .2s ease-out;  
+    -moz-transition: 
+        background-color .5s,
+        transform 200ms ease-in-out,
+        transform 750ms,
+        border .2s ease-out;         
+} 
 
 .btn:hover {
-    transform: scale(1.1);
+    box-shadow: var(--bs);
+    transform: scale(1.05);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    
+    
+    /* color: var(--color-dark); */
     
 }
 
@@ -181,6 +203,11 @@ p{
     transition: all .4s;
     box-shadow: var(--bs);
    
+}
+
+.back-to-top-container:hover{
+    
+    opacity: 0.9;
 }
 
 .back-to-top__image {
@@ -539,6 +566,14 @@ header {
     box-shadow: var(--bs);
     border-radius: var(--br);
 }
+#resume{
+    color: var(--color-dark);
+    display: inline-block;
+    margin-bottom: 3em;
+}
+#resume:hover{
+    color: var(--color-light);
+}
 
 @media (min-width: 600px) {
     .skill-container{
@@ -579,6 +614,9 @@ header {
     .about-me__img:hover{
         transform: scale(1.25);
     }
+    #resume{
+        justify-self: start;
+    }
 }
 
 
@@ -599,8 +637,9 @@ header {
     padding: 2em 3em 4em;    
 }
 .portfolio {
-    /* margin: 0 auto; */
+    margin: 2em auto;
     /* max-width: 10000px; */
+
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
@@ -664,7 +703,7 @@ header {
     
     .portfolio__img:hover,
     .portfolio__item:focus .portfolio__img{
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: .3;
     margin: 0 0 1.7em; 
     cursor: pointer;
