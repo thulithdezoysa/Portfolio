@@ -663,7 +663,7 @@ header {
         opacity 250ms linear;
     border: 2px solid var(--color-dark);
     margin: 0 0 1em;
-    opacity: .3;
+    opacity: .4;
     cursor: pointer;
   
 }
@@ -677,9 +677,31 @@ header {
  + .portfolio__img--text {
     display: block;
 }
-.live__show{    
-    position: relative;    
+
+#live{
+   
+    position: relative;
+    border: none;
+    display: block;
+
+    padding: 0;
+
+
+    
+
 }
+#live:hover{
+    
+    color: var(--color-dark);
+    opacity: 1;
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-light); 
+    transform: scale(1);     
+}
+
+
+
 
 .portfolio__img--text{
     font-family: var(--ff-primary);
