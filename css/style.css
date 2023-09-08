@@ -655,8 +655,8 @@ header {
 }
 
 .portfolio__img {
-    object-fit: cover;
-        
+    object-fit: cover ;
+     
     transition: 
         margin 900ms,
         transform 750ms cubic-bezier(.5, 0, .5, 1),
@@ -665,6 +665,14 @@ header {
     margin: 0 0 1em;
     opacity: .4;
     cursor: pointer;
+    max-height: 340px;
+    height: 100%;
+    width: 100%;
+
+    
+   
+
+    
   
 }
 
@@ -685,6 +693,7 @@ header {
     display: block;
 
     padding: 0;
+   
 
 
     
